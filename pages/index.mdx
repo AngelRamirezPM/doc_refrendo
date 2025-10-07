@@ -1,11 +1,48 @@
-# Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+---
+title: Introducción
+description: Agencia de la Transformación Digital
+---
 
-## What is Nextra?
+import {Steps, Cards} from 'nextra/components'
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+#   Tarjeta de Circulación Digital
 
-## Documentation
+Este proyecto se centra en la digitalización del trámite de emisión y renovación de la Tarjeta de Circulación Vehicular. El objetivo es ofrecer una experiencia eficiente y transparente para el ciudadano, utilizando las plataformas existentes (LlaveMX y Digital.Morelos), y culminando en la entrega de un documento digital integrado en las wallets nativas de los dispositivos móviles.
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+##  1. Matriz del Proceso de Documentación
+Esta tabla resume las fases, los artefactos de documentación, sus objetivos y los roles involucrados en cada etapa del proyecto, utilizando la terminología estándar de la industria.
+| **Fase del Proyecto** | **Artefacto / Proceso** | **Descripción y Objetivo** | **Rol Owner (Responsable Principal)** | **Roles Complementarios** |
+| --- | --- | --- | --- | --- |
+| **1. Sales & Scoping** | **SOW (Statement of Work)** | Formalizar el acuerdo con el cliente. Define de manera clara el alcance, objetivos, entregables, cronograma y costos del proyecto. Es el contrato de trabajo. | Account Executive | Solution Architect, Stakeholders |
+| **2. Discovery & Design** | **Prototypes (UX/UI)** | Traducir los requisitos en una experiencia visual y funcional. Incluye el User Journey (flujo), Wireframes (estructura) y Prototipos Hi-Fi (diseño final). | UX/UI Designer | Product Owner (PO), Tech Lead, QA Engineer |
+|  | **Proof of Concept (POC) / Spike** | Validar una hipótesis técnica de alto riesgo (ej. viabilidad de una nueva tecnología, integración compleja, performance). El objetivo es reducir la incertidumbre técnica antes de la implementación a gran escala. | Solution Architect / Tech Lead | Development Team |
+|  | **SAD (Software Architecture Document)** | Definir el blueprint técnico del sistema. Describe la arquitectura, patrones de diseño, tecnologías, microservicios y consideraciones no funcionales. | Solution Architect | Tech Lead, Development Team |
+|  | **OKRs (Objectives and Key Results)** | Alinear el proyecto con los objetivos estratégicos del negocio. Define qué se quiere lograr (Objetivo) y cómo se medirá el éxito (Resultados Clave). | Product Owner (PO) | Stakeholders, Project Manager (PM) |
+|  | **Epics** | Agrupar grandes funcionalidades o iniciativas que aportan valor al negocio. Sirven para organizar el backlog y la planificación a alto nivel. | Product Owner (PO) | Project Manager (PM) |
+|  | **User Stories** | Describir requisitos funcionales desde la perspectiva del usuario final, incluyendo los criterios de aceptación para su validación. | Product Owner (PO) | Development Team, QA Engineer, Project Manager (PM) |
+|  | **Technical Tasks** | Desglosar las historias de usuario en tareas específicas y accionables para el equipo de desarrollo (ej. "Crear endpoint", "Configurar base de datos"). | Tech Lead | Development Team |
+|  | **Sprint Planning** | Organizar el trabajo en el tiempo. Define las prioridades, asigna recursos y establece las metas para cada sprint o fase del proyecto. | Project Manager (PM) | Tech Lead, Development Team, Product Owner (PO) |
+|  | **Test Plan / Test Cases** | Diseñar la estrategia de calidad. Define los casos de prueba, tipos (unitarias, integración, UAT) y criterios para asegurar que el software funciona correctamente. | QA Lead | Tech Lead, Project Manager (PM), Product Owner (PO) |
+| **4. Development & QA** | **Pull/Merge Requests (PR/MR)** | Documentar los cambios en el código. La descripción debe explicar el "qué" y el "porqué" del cambio, facilitando la revisión de código (Code Review). | Developer | Tech Lead, Other Developers |
+|  | **Code Documentation (Comments, READMEs)** | Explicar el funcionamiento interno del código, APIs y componentes para facilitar el mantenimiento y la incorporación de nuevos miembros al equipo. | Development Team | Tech Lead |
+| **5. Deployment & Release** | **CI/CD Pipeline Documentation** | Describir los pasos, herramientas y configuraciones del proceso de integración y despliegue continuo. Asegura la reproducibilidad y la transparencia. | DevOps Engineer | Tech Lead |
+|  | **Release Notes** | Comunicar a los stakeholders y usuarios finales las nuevas funcionalidades, mejoras y correcciones de errores incluidas en cada nueva versión del software. | Product Owner (PO) | Project Manager (PM) |
+| **6. Operations & Support** | **User Manuals** | Proveer guías detalladas para que los usuarios finales puedan operar el sistema de manera autónoma y eficiente. | Technical Writer / Project Manager (PM) | Product Owner (PO) |
+|  | **Technical Documentation (Runbook)** | Consolidar la documentación técnica final, incluyendo el SAD actualizado, guías de troubleshooting y procedimientos operativos estándar. | Tech Lead / Solution Architect | Development Team, DevOps Engineer |
+|  | **Status Page / Knowledge Base** | Ofrecer un punto central de información sobre el estado del servicio, FAQs y guías para resolver problemas comunes. | Support / Operations Team | Product Owner (PO) |  
+
+
+
+
+<Cards>
+    <Cards.Card
+        icon={<img src="/images/general/icon.svg" alt="Logo" width={28} height={28}/>}
+        title="Nextra 4"
+        href="https://nextra.site"
+    />
+    <Cards.Card
+        icon=""
+        title="File Conventions"
+        href="https://nextra.site/docs/file-conventions"
+    />
+</Cards>
